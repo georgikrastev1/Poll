@@ -1,0 +1,76 @@
+{% load static %}
+{% load user_tags %}
+
+
+<div class="sidebar" data-color="white" data-background-color="black"
+     data-image="{% static '/site_images/sidebar-1.jpg' %}">
+    <div class="logo">
+
+        <a href="/" class="simple-text logo-normal">
+            {#            <img class="" src="{% static '/site_images/mainlogo.png' %}">#}
+
+        </a>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="sidebar-wrapper">
+
+
+        {% regroup diseases by category as disease_list %}
+
+        <ul class="nav">
+            {% if user.is_authenticated and request.user|has_group:"administrator" %}
+
+                {#                <div class="catalogue-actions moderator-actions">#}
+                {#                    <li class="nav-item">#}
+                {#                        <a class="nav-link" href="{% url 'create-moderator' %}">#}
+                {#                            <i class="material-icons">person_add</i>#}
+                {#                            <p>Add Moderator</p>#}
+                {#                        </a>#}
+                {#                    </li>#}
+                {#                    <li class="nav-item">#}
+                {#                        <a class="nav-link" href="{% url 'pending-cases' %}">#}
+                {#                            <i class="material-icons">assignment_late</i>#}
+                {#                            <p>Pending Cases</p>#}
+                {#                        </a>#}
+                {#                    </li>#}
+                {#                    <li class="nav-item">#}
+                {#                        <a class="nav-link" href="{% url 'reviewed-cases' %}">#}
+                {#                            <i class="material-icons">assignment_return</i>#}
+                {#                            <p>Reviewed Cases</p>#}
+                {#                        </a>#}
+                {#                    </li>#}
+                {#                    <li class="nav-item ">#}
+                {#                        <a class="nav-link" href="{% url 'live-cases' %}">#}
+                {#                            <i class="material-icons">assignment_turned_in</i>#}
+                {#                            <p>Live Cases</p>#}
+                {#                        </a>#}
+                {#                    </li>#}
+                {#                </div>#}
+
+            {% endif %}
+
+                <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">
+                            <i class="material-icons">home</i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+            {% if user.is_authenticated %}
+                <div class="catalogue-actions">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">
+                            <i class="material-icons">poll</i>
+                            <p>Polls</p>
+                        </a>
+                    </li>
+                </div>
+
+
+            {% endif %}
+        </ul>
+
+
+    </div>
+</div>

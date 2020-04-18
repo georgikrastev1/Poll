@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if latest_question_list %}
+        <div class="row">
+            {% for question in latest_question_list %}
+                <div class="col-md-3    ">
+                    <div class="card">
+                        <div class="card-header card-chart card-header-warning">
+                            <div class="ct-chart" id="dailySalesChart"></div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">{{ question.question_text }}</h4>
+                            <a href="{% url 'detail' question.id %}" class="btn btn-warning">Open</a>
+                            <a href="{% url 'question-delete' question.id %}" class="btn btn-danger">Delete</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+    <a href="{% url 'question-create' %}" class="btn btn-info"> Add Poll </a>
+
+
+{% endblock content %}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5d390e7-7c8b-47e7-9936-20e5c215dbfb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZoMTsDYQorcloK6yZAQ513r4nC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalogue/templates/catalogue" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\COMP0067_2019_Team03\catalogue\templates\catalogue" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\Poll\catalogue\templates\catalogue" />
+      <recent name="C:\Users\user\PycharmProjects\COMP0067_2019_Team03 - Copy\catalogue\templates\catalogue" />
+      <recent name="D:\COMP0067_2019_Team03\catalogue\templates\catalogue" />
+      <recent name="D:\COMP0067_2019_Team03\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="COMP0067_2019_Team03" type="Python.DjangoServer" factoryName="Django server">
+      <module name="COMP0067_2019_Team03" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="GOSH.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5d390e7-7c8b-47e7-9936-20e5c215dbfb" name="Default Changelist" comment="" />
+      <created>1553554223194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553554223194</updated>
+      <workItem from="1553554230786" duration="819000" />
+      <workItem from="1553555360941" duration="178000" />
+      <workItem from="1553555910554" duration="13583000" />
+      <workItem from="1553681116485" duration="322000" />
+      <workItem from="1553770907241" duration="3085000" />
+      <workItem from="1554380915857" duration="679000" />
+      <workItem from="1554381736797" duration="278000" />
+      <workItem from="1585501007979" duration="3845000" />
+      <workItem from="1585686453928" duration="3040000" />
+      <workItem from="1586608403501" duration="10000" />
+      <workItem from="1586610137678" duration="227000" />
+      <workItem from="1586610389563" duration="4000" />
+      <workItem from="1586610510798" duration="364000" />
+      <workItem from="1586612325217" duration="5000" />
+      <workItem from="1586612407590" duration="715000" />
+      <workItem from="1586621921756" duration="2216000" />
+      <workItem from="1586624505083" duration="1900000" />
+      <workItem from="1586678023124" duration="15550000" />
+      <workItem from="1586710262303" duration="8481000" />
+      <workItem from="1586769660367" duration="2320000" />
+      <workItem from="1586885396103" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="127" key="#COMP0067_2019_Team03" timestamp="1585501837176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="127" key="#COMP0067_2019_Team03/0.0.1920.1040@0.0.1920.1040" timestamp="1585501837176" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586625268164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586625268164" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586885399438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586885399438" />
+  </component>
+</project>

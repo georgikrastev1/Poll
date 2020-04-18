@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header card-header-text card-header-primary" data-header-animation="true">
+                <div class="card-text">
+                    <h4 class="card-title">Contact</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4"></legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-info" type="submit">Submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

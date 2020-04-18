@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Reviewed</title>
+</head>
+<body>
+<p>Hi {{ case.author }}</p>
+<p>Your case has been reviewed by a moderator. The status of your case is now: <strong>{{ case.status }}</strong></p>
+<p></p>
+<p><strong>Moderator Comments:</strong> {{ case.moderator_comments }}</p>
+<p></p>
+<p>You can make any required changes to the case <a href="{{ site_url }}{% url 'case-edit' case.id %}">here</a></p>
+<p></p>
+<p>If the above link does not work, please copy and paste this into the address bar: {{ site_url }}{% url 'case-edit' case.id %}</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Inquiry</title>
+</head>
+<body>
+<p>Hi {{ case.author }}</p>
+<p>Someone has contacted you about the case you posted.</p>
+
+
+<ul>
+    <li><strong>Case ID:</strong> {{ case.id }}</li>
+    <li><strong>Name:</strong> {{ inquiry.enquirer_name }}</li>
+    <li><strong>Email Address:</strong> {{ inquiry.enquirer_email }}</li>
+    <li><strong>Message:</strong> {{ inquiry.message }}</li>
+
+</ul>
+<p>If you'd like to help, you can contact them at <a href="{{ inquiry.enquirer_email }}">{{ inquiry.enquirer_email }}</a></p>
+<p>To review Case {{ case.id }}, click <a href="{{ site_url }}{% url 'case-detail' case.id %}">here</a></p>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{#            <img class="" src="{% static 'site_images/GOSHbackground1.jpg' %}">#}
+
+
+
+
+
+
+
+{% block content %}
+
+    <style>
+        .wrapper {
+            background: url("{% static '/site_images/vote2.jpeg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+
+        .overlay {
+            background-color: rgba(33, 33, 33, 0.5);
+            display: block;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+
+    </style>
+
+
+    <div class="hero-section">
+        <div class="hero-section-container">
+
+            <div class="floating-section">
+
+                <h2>Polling tool</h2>
+            </div>
+
+        </div>
+    </div>
+	
+	<div class="hero-section">
+        <div class="hero-section-container">
+
+            <div class="floating-section">
+
+                <h2>Polling tool</h2>
+            </div>
+
+        </div>
+    </div>
+	
+	<div class="hero-section">
+        <div class="hero-section-container">
+
+            <div class="floating-section">
+
+                <h2>Polling tool</h2>
+            </div>
+
+        </div>
+    </div>
+	
+	<div class="hero-section">
+        <div class="hero-section-container">
+
+            <div class="floating-section">
+
+                <h2>Polling tool</h2>
+            </div>
+
+        </div>
+    </div>
+	
+{% endblock content %}

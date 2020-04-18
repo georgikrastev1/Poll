@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moderator Account Created</title>
+</head>
+<body>
+<p>A moderator account has been created for you.</p>
+<ul>
+    <li><strong>Username</strong> {{ username }}</li>
+    <li><strong>Password</strong> {{ password }}</li>
+</ul>
+<p>You must log in and set your own password immediately.</p>
+{{ site_url }}{% url 'change_password' %}
+<a href="{{ site_url }}{% url 'change_password' %}">Change Password</a>
+<p></p>
+</body>
+</html>

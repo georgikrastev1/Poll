@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1></h1>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    {#    <form action="{% url 'vote' question.id %}" method="post">#}
+    {#        <div class="form-check form-check-radio">#}
+    {#            <fieldset class="form-group">#}
+    {#                {% csrf_token %}#}
+    {#                {% for choice in question.choice_set.all %}#}
+    {#                    <input class="form-check-input" type="radio" name="choice" id="choice{{ forloop.counter }}"#}
+    {#                           value="{{ choice.id }}">#}
+    {#                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }} ({{ choice.creator }})</label><br>#}
+    {#                {% endfor %}#}
+    {#                <input type="submit" value="Vote" class="btn btn-info">#}
+    {#            </fieldset>#}
+    {#        </div>#}
+    {#    </form>#}
+
+    <div class="card card-nav-tabs">
+        <div class="card-header card-header-warning">
+            {{ question.question_text }}
+        </div>
+        <div class="card-body">
+
+                <form action="{% url 'vote' question.id %}" method="post">
+                    <div class="form-group">
+                        {% csrf_token %}
+                        {% for choice in question.choice_set.all %}
+                            <div class="form-check form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="choice"
+                                           id="choice{{ forloop.counter }}"
+                                           value="{{ choice.id }}">
+                                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}
+                                        (Author: {{ choice.creator }})</label><br>
+                                    <span class="circle">
+                        <span class="check"></span>
+                    </span>
+                                </label>
+                            </div>
+                        {% endfor %}
+                        <input type="submit" value="Vote" class="btn btn-info">
+                        <a href="{% url 'choice-create' question.id %}" class="btn btn-info"> Add Choice </a>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+
+
+
+    {#    <ul>#}
+    {#        <li>{{ question.question_text }}</li>#}
+    {#        <li>{{ question.user }}</li>#}
+    {#        <li>{{ question.pub_date }}</li>#}
+    {#    </ul>#}
+    {#    <ul>#}
+    {#        {% for choice in question.choice_set.all %}#}
+    {#            <li>{{ choice.choice_text }}</li>#}
+    {#        {% endfor %}#}
+    {#    </ul>#}
+
+
+{% endblock content %}
